@@ -15,7 +15,8 @@ let package = Package(
     targets: [
         .target(
             name: "EncryptedCoreData",
-            path: "Incremental Store"
+            path: "Incremental Store",
+            publicHeadersPath: "include"
         ),
         .testTarget(
             name: "EncryptedCoreDataTests",
