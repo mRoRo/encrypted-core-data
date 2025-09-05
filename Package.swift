@@ -13,7 +13,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/stephencelis/SQLCipher.git", from: "3.4.0"),
+        .package(url: "https://github.com/sqlcipher/SQLCipher.git", from: "3.4.0"),
         .package(url: "https://github.com/mRoRo/encrypted-core-data", branch: "Xcode-26")
     ],
     targets: [
