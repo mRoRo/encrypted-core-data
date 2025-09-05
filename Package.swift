@@ -17,7 +17,8 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "EncryptedCoreData"
+            name: "EncryptedCoreData",
+            path: "Incremental Store"
         )
     ]
 )
