@@ -23,6 +23,8 @@ let package = Package(
             ],
             publicHeadersPath: "include",
             cSettings: [
+                .define("SQLITE_HAS_CODEC"),
+                .define("SQLCIPHER_CRYPTO_CC"),
                 .headerSearchPath("include"),
             ]
         ),
