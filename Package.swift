@@ -23,7 +23,7 @@ let package = Package(
             dependencies: [
                 .product(name: "SQLCipher", package: "SQLCipher.swift")
             ],
-            path: "Incremental Store",
+            path: "Incremental_Store",
             sources: ["EncryptedStore.h", "EncryptedStore.m"],
             publicHeadersPath: "include",
             cSettings: [
