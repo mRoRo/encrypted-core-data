@@ -16,7 +16,13 @@ let package = Package(
         .target(
             name: "EncryptedCoreData",
             path: "Incremental Store",
-            publicHeadersPath: "include"
+            publicHeadersPath: "include",
+            dependencies: [
+                .package(
+                    url: "https://github.com/sqlcipher/sqlcipher.git",
+                    exact: "v3.4.0"
+                )
+            ],
         ),
         .testTarget(
             name: "EncryptedCoreDataTests",
