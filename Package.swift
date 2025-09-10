@@ -12,7 +12,12 @@ let package = Package(
             targets: ["EncryptedCoreData"]
         ),
     ],
-    dependencies: [],
+    dependencies: [
+        .package(
+            url: "https://github.com/sqlcipher/sqlcipher.git",
+            from: "3.4.0"
+        )
+    ],
     targets: [
         .target(
             name: "EncryptedCoreData",
