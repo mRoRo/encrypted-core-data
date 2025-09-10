@@ -24,7 +24,6 @@ let package = Package(
                 .product(name: "SQLCipher", package: "SQLCipher.swift")
             ],
             path: "Incremental_Store",
-            sources: ["EncryptedStore.h", "EncryptedStore.m"],
             publicHeadersPath: "include",
             cSettings: [
                 .define("SQLITE_HAS_CODEC"),
