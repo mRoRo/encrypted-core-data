@@ -21,7 +21,9 @@ let package = Package(
     targets: [
         .target(
             name: "EncryptedCoreData",
-            dependencies: [],
+            dependencies: [
+                .product(name: "SQLCipher", package: "sqlcipher")
+            ],
             path: "Incremental Store",
             sources: [
                 "."
