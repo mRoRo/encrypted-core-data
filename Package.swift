@@ -33,6 +33,10 @@ let package = Package(
                 .define("SQLITE_HAS_CODEC"),
                 .define("SQLCIPHER_CRYPTO_CC"),
                 .headerSearchPath("include"),
+            ],
+            linkerSettings: [
+                .linkedFramework("CoreData"),
+                .linkedFramework("Security")
             ]
         ),
     ]
