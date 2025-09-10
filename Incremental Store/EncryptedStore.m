@@ -12,6 +12,7 @@
 #import <objc/runtime.h>
 
 #import "EncryptedStore.h"
+#import <SQLCipher/SQLCipher.h>
 
 typedef sqlite3_stmt sqlite3_statement;
 
