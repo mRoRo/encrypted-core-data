@@ -15,14 +15,23 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/sqlcipher/sqlcipher.git",
-            exact: "3.4.2"
+            from: "3.4.0"
         )
     ],
     targets: [
         .target(
             name: "EncryptedCoreData",
             path: "Incremental Store",
-            publicHeadersPath: "include"
+            publicHeadersPath: "include",
+            cSettings: [
+                .define("SQLITE_HAS_CODEC"),
+                .define("SQLCIPHER_CRYPTO_CC"),
+                .headerSearchPath("include")
+            ],
+            linkerSettings: [
+                .linkedFramework("CoreData"),
+                .linkedFramework("Security")
+            ]
         ),
         .testTarget(
             name: "EncryptedCoreDataTests",
