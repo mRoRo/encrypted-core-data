@@ -20,7 +20,7 @@ let package = Package(
             dependencies: [
                 .package(
                     url: "https://github.com/sqlcipher/sqlcipher.git",
-                    exact: "v3.4.0"
+                    exact: "v3.4.2"
                 )
             ],
         ),
