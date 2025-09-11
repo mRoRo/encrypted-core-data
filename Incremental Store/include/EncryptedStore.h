@@ -6,6 +6,7 @@
 //
 
 #import <CoreData/CoreData.h>
+#import <Foundation/Foundation.h>
 
 typedef struct _options {
     char * passphrase;
